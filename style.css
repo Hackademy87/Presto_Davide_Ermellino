@@ -1,0 +1,224 @@
+/* IMPOSTAZIONI PAGINA */
+*{
+    font-family: 'Electrolize', sans-serif;
+}
+h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6{
+    font-family: 'Orbitron', sans-serif;
+}
+
+:root{
+    --colorBaltic : rgb(0,140,202);
+    --colorIce : rgb(230,230,230);
+    --colorSunSet: rgb(219,116,83);
+}
+
+.bg-baltic{
+    background-color: var(--colorBaltic);
+}
+.bg-ice{
+    background-color: var(--colorIce);
+}
+.bg-sunset{
+    background-color: var(--colorSunSet);
+}
+.tx-baltic{
+    color: var(--colorBaltic);
+}
+.tx-ice{
+    color: var(--colorIce);
+}
+.tx-sunset{
+    color: var(--colorSunSet);
+}
+
+/* CSS NAVBAR  */
+.navbar-custom{
+    width: 100%;
+    background-color: var(--colorBaltic);
+    transition: 0.5s;
+}
+.logo-custom{
+    width: 50px;
+    height: 50px;
+}
+.nav-link{
+    color: var(--colorIce);
+    border: transparent;
+}
+.nav-link:hover{
+    color: var(--colorIce);
+    border-bottom: 2px solid var(--colorSunSet);
+    font-weight: 600;
+}
+
+.navbar-blur{
+    backdrop-filter: blur(9px) saturate(0.8);
+    background-color: rgba(230,230,230,0.7);
+}
+/* fine css navbar  */
+
+/* inizio css header  */
+.header-custom{
+    height: 100vh;
+    background-image: linear-gradient(rgba(230,230,230,0.9),rgba(230,230,230,0.0)), url(Media/header_img.jpg);
+    background-position: top;
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    animation-name: movement;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes movement {
+    0% {background-position: left;};
+    100%{background-position: right;};
+}
+
+.icon-section{
+    color: var(--colorIce);
+    background-color: var(--colorBaltic);
+    padding: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--colorSunSet);
+}
+.icon-section:hover{
+    color: var(--colorBaltic);
+    background-color: var(--colorSunSet);
+    padding: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--colorIce);
+}
+.text-gradient{
+    font-size: 60px;
+    background: -webkit-linear-gradient(var(--colorSunSet), var(--colorBaltic));
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: transparent;
+}
+
+/* css sezioni del sito */
+.borde{
+    height: 100%;
+    border-radius: 20px;
+    padding: 40px;
+}
+.img-border{
+    height: 300px;
+    width: 300px;
+    border: 2px solid var(--colorSunSet);
+    border-radius: 50%;
+    padding: 10px;
+}
+.section-animation{
+    padding: 16px;
+    border-radius: 20px;
+    border: 2px solid var(--colorSunSet);
+}
+
+.explore-shop{
+    height: 100vh;
+    background: linear-gradient(rgba(230,230,230,0.5),rgba(0,0,0,0.8)), url(./Media/section_shop.jpg);
+    background-attachment: fixed;
+}
+/* bottone preso da libreria esterna css */
+.cta {
+    border: none;
+    background: none;
+  }
+
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 20px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+
+  .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+
+  .hover-underline-animation {
+    position: relative;
+    color: var(--colorIce);
+    padding-bottom: 20px;
+  }
+
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--colorSunSet);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.number{
+    font-size: 50px;
+    color: var(--colorSunSet);
+    font-weight: 900;
+}
+
+/* CSS swiper js */
+.swiper {
+    height: 300px;
+  }
+  .card
+  {
+    height: 100%;
+  }
+  .card-text{
+    margin-top: 100px;
+    text-align: center;
+  }
+  /* form */
+  .btn-custom:hover{
+    background-color: var(--colorSunSet);
+  }
+  /* pagina annunci */
+  /* main */
+  .main-custom{
+    margin-top: 150px;
+  }
+  .accordion-item, .accordion-button{
+    background-color: var(--colorBaltic);
+    color: var(--colorIce);
+  }
+  .accordion-button:focus{
+    background-color: var(--colorBaltic);
+    color: var(--colorIce);
+    box-shadow: none;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: var(--colorBaltic);
+    color: var(--colorIce);
+  }
+  .form-check-input:checked{
+    border: 5px solid var(--colorSunSet);
+    background-color: var(--colorIce);
+  }
+.card-custom{
+  width: 18rem;
+  height: 18rem;
+}

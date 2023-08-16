@@ -1,0 +1,302 @@
+[
+    {
+      "id": 1,
+      "name": "Beginner's Surfboard",
+      "category": "Boards",
+      "price": 299.99
+    },
+    {
+      "id": 2,
+      "name": "Performance Shortboard",
+      "category": "Boards",
+      "price": 499.99
+    },
+    {
+      "id": 3,
+      "name": "Longboard",
+      "category": "Boards",
+      "price": 599.99
+    },
+    {
+      "id": 4,
+      "name": "Wetsuit - Men's",
+      "category": "Apparel",
+      "price": 159.99
+    },
+    {
+      "id": 5,
+      "name": "Wetsuit - Women's",
+      "category": "Apparel",
+      "price": 169.99
+    },
+    {
+      "id": 6,
+      "name": "Surfboard Leash",
+      "category": "Accessories",
+      "price": 19.99
+    },
+    {
+      "id": 7,
+      "name": "Surf Wax Pack",
+      "category": "Accessories",
+      "price": 12.99
+    },
+    {
+      "id": 8,
+      "name": "FCS II Surf Fins",
+      "category": "Accessories",
+      "price": 49.99
+    },
+    {
+      "id": 9,
+      "name": "Surfboard Travel Bag",
+      "category": "Accessories",
+      "price": 79.99
+    },
+    {
+      "id": 10,
+      "name": "Surf Sunscreen SPF 50",
+      "category": "Skincare",
+      "price": 14.99
+    },
+    {
+      "id": 11,
+      "name": "Beach Towel",
+      "category": "Accessories",
+      "price": 29.99
+    },
+    {
+      "id": 12,
+      "name": "Surfboard Traction Pad",
+      "category": "Accessories",
+      "price": 24.99
+    },
+    {
+      "id": 13,
+      "name": "Surfboard Repair Kit",
+      "category": "Accessories",
+      "price": 9.99
+    },
+    {
+      "id": 14,
+      "name": "Surf Hat",
+      "category": "Apparel",
+      "price": 19.99
+    },
+    {
+      "id": 15,
+      "name": "Surfboard Wall Rack",
+      "category": "Accessories",
+      "price": 39.99
+    },
+    {
+      "id": 16,
+      "name": "Surfboard Fin Key",
+      "category": "Accessories",
+      "price": 4.99
+    },
+    {
+      "id": 17,
+      "name": "Surfboard Nose Guard",
+      "category": "Accessories",
+      "price": 8.99
+    },
+    {
+      "id": 18,
+      "name": "Surfboard T-Shirt",
+      "category": "Apparel",
+      "price": 21.99
+    },
+    {
+      "id": 19,
+      "name": "Surfboard Socks",
+      "category": "Apparel",
+      "price": 15.99
+    },
+    {
+      "id": 20,
+      "name": "Surfboard Tail Pad",
+      "category": "Accessories",
+      "price": 19.99
+    },
+    {
+      "id": 21,
+      "name": "Surfboard Car Rack",
+      "category": "Accessories",
+      "price": 69.99
+    },
+    {
+      "id": 22,
+      "name": "Surfboard Trolley",
+      "category": "Accessories",
+      "price": 89.99
+    },
+    {
+      "id": 23,
+      "name": "Surfboard Fins - Quad Set",
+      "category": "Accessories",
+      "price": 59.99
+    },
+    {
+      "id": 24,
+      "name": "Surfboard Wax Comb",
+      "category": "Accessories",
+      "price": 6.99
+    },
+    {
+      "id": 25,
+      "name": "Surfboard Repair Resin",
+      "category": "Accessories",
+      "price": 14.99
+    },
+    {
+      "id": 26,
+      "name": "Surfboard Traction Wax",
+      "category": "Accessories",
+      "price": 8.99
+    },
+    {
+      "id": 27,
+      "name": "Surfboard Ding Tape",
+      "category": "Accessories",
+      "price": 10.99
+    },
+    {
+      "id": 28,
+      "name": "Surfboard Tail Guard",
+      "category": "Accessories",
+      "price": 7.99
+    },
+    {
+      "id": 29,
+      "name": "Surfboard Fin Key and Screws",
+      "category": "Accessories",
+      "price": 5.99
+    },
+    {
+      "id": 30,
+      "name": "Surfboard Leash Plug",
+      "category": "Accessories",
+      "price": 3.99
+    },
+    {
+      "id": 31,
+      "name": "Surfboard Deck Grip",
+      "category": "Accessories",
+      "price": 18.99
+    },
+    {
+      "id": 32,
+      "name": "Surfboard Traction Tail Pad",
+      "category": "Accessories",
+      "price": 16.99
+    },
+    {
+      "id": 33,
+      "name": "Surfboard Carver Fins",
+      "category": "Accessories",
+      "price": 54.99
+    },
+    {
+      "id": 34,
+      "name": "Surfboard Futures Fins",
+      "category": "Accessories",
+      "price": 49.99
+    },
+    {
+      "id": 35,
+      "name": "Surfboard Single Fin",
+      "category": "Accessories",
+      "price": 29.99
+    },
+    {
+      "id": 36,
+      "name": "Surfboard Roof Rack",
+      "category": "Accessories",
+      "price": 79.99
+    },
+    {
+      "id": 37,
+      "name": "Surfboard Carry Strap",
+      "category": "Accessories",
+      "price": 12.99
+    },
+    {
+      "id": 38,
+      "name": "Surfboard Traction Wax Comb",
+      "category": "Accessories",
+      "price": 5.99
+    },
+    {
+      "id": 39,
+      "name": "Surfboard Fin Box",
+      "category": "Accessories",
+      "price": 9.99
+    },
+    {
+      "id": 40,
+      "name": "Surfboard Ding Repair Kit",
+      "category": "Accessories",
+      "price": 17.99
+    },
+    {
+      "id": 41,
+      "name": "Surfboard Wall Mount",
+      "category": "Accessories",
+      "price": 29.99
+    },
+    {
+      "id": 42,
+      "name": "Surfboard Deck Bag",
+      "category": "Accessories",
+      "price": 24.99
+    },
+    {
+      "id": 43,
+      "name": "Surfboard Changing Mat",
+      "category": "Accessories",
+      "price": 11.99
+    },
+    {
+      "id": 44,
+      "name": "Surfboard Fin Wallet",
+      "category": "Accessories",
+      "price": 8.99
+    },
+    {
+      "id": 45,
+      "name": "Surfboard Repair Putty",
+      "category": "Accessories",
+      "price": 7.99
+    },
+    {
+      "id": 46,
+      "name": "Surfboard Neck Lanyard",
+      "category": "Accessories",
+      "price": 4.99
+    },
+    {
+      "id": 47,
+      "name": "Surfboard Deck Traction",
+      "category": "Accessories",
+      "price": 22.99
+    },
+    {
+      "id": 48,
+      "name": "Surfboard Fin Screws",
+      "category": "Accessories",
+      "price": 3.99
+    },
+    {
+      "id": 49,
+      "name": "Surfboard Wax Remover",
+      "category": "Accessories",
+      "price": 6.99
+    },
+    {
+      "id": 50,
+      "name": "Surfboard Fin Template",
+      "category": "Accessories",
+      "price": 9.99
+    }
+  ]
