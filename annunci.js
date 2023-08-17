@@ -6,11 +6,16 @@ let productCardWrapper = document.querySelector("#productCardWrapper");
 let categoryCheckWrapper = document.querySelector("#categoryCheckWrapper");
 let price = document.querySelector("#price");
 let priceFilter = document.querySelector("#priceFilter");
-let searchProduct = document.querySelector('#searchProduct');
+let searchProduct = document.querySelector("#searchProduct");
+let btnPrice = document.querySelector("#btnPrice");
+
 
 fetch("annunci.json")
   .then((responsability) => responsability.json())
   .then((data) => {
+
+    mostraCard(data);
+
     function setCategories() {
       // inserimento categorie dei prodotti all'inetrno del filtro prodotti per categoria
       let categories = [];
@@ -35,7 +40,6 @@ fetch("annunci.json")
       });
     }
     setCategories();
-    mostraCard(data);
 
     let radios = document.querySelectorAll(".form-check-input");
 
@@ -52,7 +56,7 @@ fetch("annunci.json")
 
     radios.forEach((button) => {
       button.addEventListener("change", () => {
-    setInitialPrice(filterCategory(data));
+        setInitialPrice(filterCategory(data));
 
         globalFilter();
       });
@@ -63,46 +67,46 @@ fetch("annunci.json")
       priceFilter.max = Math.round(array[0].price);
       priceFilter.value = priceFilter.max;
       price.innerHTML = "$" + priceFilter.value;
-      console.log(priceFilter.max);
     }
     setInitialPrice(filterCategory(data));
     priceFilter.addEventListener("input", () => {
-
-    globalFilter();
-    });
-    function filterPrice(array) {
       price.innerHTML = "$" + priceFilter.value;
+    });
+    btnPrice.addEventListener("click", ()=>{
+      globalFilter();
+    })
+    function filterPrice(array) {
       let filter = array.filter(
         (articolo) => +articolo.price <= +priceFilter.value
       );
       return filter;
     }
-// finefiltro prezzo
+    // finefiltro prezzo
 
-// filtro parola
+    // filtro parola
     function filterWord(array) {
-        let filter = array.filter((annuncio)=> annuncio.name.toLowerCase().includes(searchProduct.value.toLowerCase()));
-        return filter;
+      let filter = array.filter((annuncio) =>
+        annuncio.name.toLowerCase().includes(searchProduct.value.toLowerCase())
+      );
+      return filter;
     }
-    searchProduct.addEventListener('input', ()=>{
-        globalFilter();
-    })
-// fine filtro parola
+    searchProduct.addEventListener("input", () => {
+      globalFilter();
+    });
+    // fine filtro parola
 
-// filtro globale
- function globalFilter() {
-    let filterCat = filterCategory(data);
-    let filterPr = filterPrice(filterCat);
-    let filterWo = filterWord(filterPr);
-    mostraCard(filterWo);
-    if (productCardWrapper.innerHTML == "") {
-        let p = document.createElement('p');
-        p.innerHTML='Nessun prodotto corrisponde alla tua ricerca'
+    // filtro globale
+    function globalFilter() {
+      let filterCat = filterCategory(data);
+      let filterPr = filterPrice(filterCat);
+      let filterWo = filterWord(filterPr);
+      mostraCard(filterWo);
+      if (productCardWrapper.innerHTML == "") {
+        let p = document.createElement("p");
+        p.innerHTML = "Nessun prodotto corrisponde alla tua ricerca";
         productCardWrapper.appendChild(p);
+      }
     }
-
- }
-
 
     // funzione per creare le card del prodotto
     function mostraCard(array) {
@@ -120,7 +124,6 @@ fetch("annunci.json")
             <div class="card-footer">categoria: ${prodotto.category}</div>
       `;
         productCardWrapper.appendChild(div);
-
       });
     }
   });
